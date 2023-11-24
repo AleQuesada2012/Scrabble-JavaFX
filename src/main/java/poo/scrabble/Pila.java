@@ -1,3 +1,5 @@
+package poo.scrabble;
+
 import java.util.ArrayList;
 import java.util.Vector;
 import java.util.Random;

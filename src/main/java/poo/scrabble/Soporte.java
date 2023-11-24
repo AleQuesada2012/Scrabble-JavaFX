@@ -1,4 +1,4 @@
-
+package poo.scrabble;
 
 import java.util.Vector;
 

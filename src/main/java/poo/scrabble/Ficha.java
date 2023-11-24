@@ -1,3 +1,4 @@
+package poo.scrabble;
 
 /**
  * La clase ficha que crea la lógica destinada a las características de la ficha.
