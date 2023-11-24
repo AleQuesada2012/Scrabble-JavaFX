@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poo.scrabble.RummikubController">
+    <Label text="Bienvenido al juego Rummikub! por favor seleccione la cantidad de jugadores:" />
+
+    <RadioButton fx:id="player2RadioButton" onAction="#manejarSeleccionRadioButton" text="2 jugadores" textAlignment="CENTER">
+      <toggleGroup>
+         <ToggleGroup fx:id="jugadoresToggleGroup" />
+      </toggleGroup></RadioButton>
+    <RadioButton fx:id="player3RadioButton" onAction="#manejarSeleccionRadioButton" text="3 jugadores" textAlignment="CENTER" toggleGroup="$jugadoresToggleGroup" />
+    <RadioButton fx:id="player4RadioButton" onAction="#manejarSeleccionRadioButton" text="4 jugadores" textAlignment="CENTER" toggleGroup="$jugadoresToggleGroup" />
+
+    <TextField fx:id="player1TextField" alignment="CENTER" promptText="Escriba el nombre del jugador 1..." />
+    <TextField fx:id="player2TextField" alignment="CENTER" promptText="Escriba el nombre del jugador 2..." />
+    <TextField fx:id="player3TextField" alignment="CENTER" promptText="Escriba el nombre del jugador 3..." visible="false" />
+    <TextField fx:id="player4TextField" alignment="CENTER" promptText="Escriba el nombre del jugador 4..." visible="false" />
+    <Button fx:id="startButton" onAction="#startGame" text="Empezar" />
+
+</VBox>
